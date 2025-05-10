@@ -1,0 +1,134 @@
+/* Card container */
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #fcd34d; /* Yellow background */
+    padding: 20px;
+  }
+  
+  /* Card styles */
+  .card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 360px;
+    width: 100%;
+  }
+  
+  /* Card header with graphic elements */
+  .card-header {
+    position: relative;
+    height: 192px;
+    background-color: #fcd34d; /* Yellow background */
+  }
+  
+  .graphic-elements {
+    position: absolute;
+    inset: 0;
+    padding: 24px;
+  }
+  
+  .circle-black {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 96px;
+    height: 96px;
+    background-color: black;
+    border-radius: 50%;
+  }
+  
+  .circle-yellow {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 80px;
+    height: 80px;
+    background-color: #fde68a; /* Lighter yellow */
+    border-radius: 50%;
+  }
+  
+  .square-white {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 64px;
+    height: 64px;
+    background-color: white;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .square-inner {
+    width: 32px;
+    height: 32px;
+    border: 2px solid black;
+  }
+  
+  /* Card content */
+  .card-content {
+    padding: 24px;
+  }
+  
+  .badge {
+    display: inline-block;
+    background-color: #fef3c7; /* Very light yellow */
+    color: #92400e; /* Dark yellow/brown */
+    font-size: 12px;
+    font-weight: 500;
+    padding: 4px 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+  }
+  
+  .date {
+    font-size: 14px;
+    color: #6b7280; /* Gray */
+    margin-bottom: 16px;
+  }
+  
+  .title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #111827; /* Dark gray, almost black */
+    margin-bottom: 16px;
+  }
+  
+  .description {
+    font-size: 14px;
+    color: #4b5563; /* Medium gray */
+    margin-bottom: 24px;
+  }
+  
+  .author {
+    display: flex;
+    align-items: center;
+    padding-top: 8px;
+  }
+  
+  .author-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #e5e7eb; /* Light gray */
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="gray"><path d="M12 12a5 5 0 100-10 5 5 0 000 10zm0 2c-5.5 0-10 2.5-10 7v1h20v-1c0-4.5-4.5-7-10-7z"/></svg>');
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .author-name {
+    margin-left: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #374151; /* Dark gray */
+  }
+  
